@@ -1,0 +1,23 @@
+site_name: Pipet Docs
+dev_addr: 127.0.0.1:5000
+copyright: "Pipet is licensed under the <a href=''>MIT license"
+repo_url: "https://github.com/"
+theme:
+  name: material
+  customer_dir: theme
+  palette:
+    primary: indigo
+    accent: green
+  hljs_languages: 
+  - python
+extra:
+    version: 0.0.1a
+markdown_extensions:
+  - toc:
+      permalink: True
+      baselevel: 2
+nav:
+  - Home: index.md
+  - About: about.md
+  - Sub: 
+    - sub1: folder/sub.md
