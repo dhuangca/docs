@@ -1,10 +1,12 @@
 site_name: Pipet Docs
 dev_addr: 127.0.0.1:5000
-copyright: "Pipet is licensed under the <a href=''>MIT license"
-repo_url: "https://github.com/"
+copyright: "Pipet is licensed under the <a href=''>MIT license</a>"
+repo_url: "https://github.com/pypipet/docs.git"
+site_url: https://pypipet.github.io/docs/
 theme:
   name: material
-  customer_dir: theme
+  features:
+    - navigation.sections
   palette:
     primary: indigo
     accent: green
@@ -12,12 +14,15 @@ theme:
   - python
 extra:
     version: 0.0.1a
+    generator: false
 markdown_extensions:
   - toc:
       permalink: True
       baselevel: 2
+  - pymdownx.tasklist:
+      custom_checkbox: true
 nav:
-  - Home: index.md
-  - About: about.md
-  - Sub: 
-    - sub1: folder/sub.md
+  - Introduction: index.md
+  - Contributions Guide: about.md
+  - Quick Start: 
+    - start a project: quick_start/sub.md
